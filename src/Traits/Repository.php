@@ -123,6 +123,7 @@ abstract class Repository
      * Replace the Subject while maintaining chain.
      *
      * @param mixed $value
+     * @return $this
      */
     public function setSubject($value)
     {
@@ -195,6 +196,10 @@ abstract class Repository
 
     /**
      * Allow the chained calling of methods.
+     *
+     * @param $method
+     * @param $arguments
+     * @return $this
      */
     public function __call($method, $arguments)
     {
@@ -254,6 +259,7 @@ abstract class Repository
      * @param string $class      The class
      * @param string $method     The method
      * @param array  $parameters The arguments
+     * @return mixed
      */
     protected static function callMethod($class, $method, $parameters)
     {

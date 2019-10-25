@@ -14,10 +14,13 @@ namespace Underscore\Methods;
 /**
  * Methods to manage objects.
  */
-class ObjectMethods extends CollectionMethods
+class ObjectsMethods extends CollectionMethods
 {
     /**
      * Get all methods from an object.
+     *
+     * @param $object
+     * @return array
      */
     public static function methods($object)
     {
@@ -26,6 +29,10 @@ class ObjectMethods extends CollectionMethods
 
     /**
      * Unpack an object's properties.
+     *
+     * @param $object
+     * @param mixed $attribute
+     * @return object
      */
     public static function unpack($object, $attribute = null)
     {
