@@ -12,15 +12,15 @@
 namespace Underscore\Types;
 
 use stdClass;
-use Underscore\Methods\ObjectMethods;
+use Underscore\Methods\ObjectsMethods;
 use Underscore\Traits\Repository;
 
 /**
- * Object repository.
+ * Objects repository.
  *
- * @mixin ObjectMethods
+ * @mixin ObjectsMethods
  */
-class Object extends Repository
+class Objects extends Repository
 {
     /**
      * The method used to convert new subjects.

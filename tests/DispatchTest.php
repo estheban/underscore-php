@@ -26,7 +26,7 @@ class DispatchTest extends UnderscoreTestCase
             [1.2e3, 'Number'],
             [7E-10, 'Number'],
             [[], 'Arrays'],
-            [new StdClass(), 'Object'],
+            [new StdClass(), 'Objects'],
             [
                 function () {
                     return;
